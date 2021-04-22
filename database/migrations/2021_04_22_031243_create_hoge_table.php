@@ -13,11 +13,11 @@ class CreateHogeTable extends Migration
      */
     public function up()
     {
-        Schema::create('hoges', function (Blueprint $table){
+        Schema::create('hoges', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->integer('age');
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
